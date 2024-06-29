@@ -25,10 +25,10 @@ const Home = () => {
       jsPDF: { unit: 'mm', format: [80, receiptHeight], orientation: 'portrait' },
     };
 
-    // Generate pdf
+    // Generate pdf tu
     html2pdf().from(element).set(opt).save()
 
-    // Generate PDF and send to printer
+    // Generate PDF and send to printer tu
     // html2pdf().from(element).set(opt).outputPdf('blob').then((blob) => sendToPrinter(blob));
   };
 
@@ -44,152 +44,62 @@ const Home = () => {
 
   const receiptDetails = {
     "transaction": {
-      "transaction_id": 2,
+      "transaction_id": 1,
       "branch_id": 1,
       "user_id": 2,
-      "transaction_number": "374445",
+      "transaction_number": "658468",
       "transaction_status": "Confirmed",
-      "transaction_total": "230.00",
-      "transaction_cash_received": "230.00",
+      "transaction_total": "115.00",
+      "transaction_cash_received": "115.00",
       "transaction_change": "0.00",
       "voucher_id": null,
-      "transaction_vat_able": "202.40",
-      "transaction_vat_tax": "27.60",
+      "transaction_vat_able": "101.20",
+      "transaction_vat_tax": "13.80",
       "transaction_order_method": "Dine In",
       "transaction_payment_method": "Cash",
-      "createdAt": "2024-06-27T22:48:24.391Z",
-      "updatedAt": "2024-06-27T22:48:24.391Z",
+      "createdAt": "2024-06-29T09:01:22.358Z",
+      "updatedAt": "2024-06-29T09:01:22.358Z",
       "orders": [
         {
-          "order_id": 2,
-          "product_id": 1,
-          "order_quantity": 1,
-          "transaction_id": 2,
-          "createdAt": "2024-06-27T22:48:24.436Z",
-          "updatedAt": "2024-06-27T22:48:24.436Z",
-          "product": {
-            "product_id": 1,
-            "product_name": "Aeropress",
-            "sub_category_id": 1,
-            "product_status": "Active",
-            "createdAt": "2024-06-27T22:20:07.759Z",
-            "updatedAt": "2024-06-27T22:20:07.759Z",
-            "variants": [
-              {
-                "variant_id": 1,
-                "product_id": 1,
-                "variant_type": "Hot",
-                "variant_size": "12",
-                "variant_cost": "115.00",
-                "createdAt": "2024-06-27T22:20:07.808Z",
-                "updatedAt": "2024-06-27T22:20:07.808Z"
-              },
-              {
-                "variant_id": 2,
-                "product_id": 1,
-                "variant_type": "Cold",
-                "variant_size": "12",
-                "variant_cost": "115.00",
-                "createdAt": "2024-06-27T22:20:07.933Z",
-                "updatedAt": "2024-06-27T22:20:07.933Z"
-              },
-              {
-                "variant_id": 3,
-                "product_id": 1,
-                "variant_type": "Cold",
-                "variant_size": "16",
-                "variant_cost": "130.00",
-                "createdAt": "2024-06-27T22:20:08.061Z",
-                "updatedAt": "2024-06-27T22:20:08.061Z"
-              }
-            ],
-            "addons": [
-              {
-                "product_id": 1,
-                "material_id": 4,
-                "addon_amount": "0.00",
-                "createdAt": "2024-06-27T22:20:08.189Z",
-                "updatedAt": "2024-06-27T22:20:08.189Z",
-                "material": {
-                  "material_id": 4,
-                  "branch_id": 1,
-                  "material_name": "Whole Milk",
-                  "material_pack_quantity": 40,
-                  "material_unit": "mL",
-                  "material_amount_per_pack": "1000.00",
-                  "material_cost": "60.00",
-                  "material_critical_level": 10,
-                  "createdAt": "2024-06-27T22:17:59.163Z",
-                  "updatedAt": "2024-06-27T22:17:59.163Z"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "order_id": 3,
+          "order_id": 1,
           "product_id": 2,
           "order_quantity": 1,
-          "transaction_id": 2,
-          "createdAt": "2024-06-27T22:48:24.436Z",
-          "updatedAt": "2024-06-27T22:48:24.436Z",
+          "transaction_id": 1,
+          "order_variant": {
+            "variant_size": "12",
+            "variant_type": "Cold",
+            "variant_cost": "115.00"
+          },
+          "order_addons": [
+            {
+              "product_id": 2,
+              "material_id": 4,
+              "addon_amount": "4.00",
+              "createdAt": "2024-06-27T22:28:47.701Z",
+              "updatedAt": "2024-06-27T22:28:47.701Z",
+              "material": {
+                "material_id": 4,
+                "branch_id": 1,
+                "material_name": "Whole Milk",
+                "material_pack": 40,
+                "material_unit": "mL",
+                "material_amou": "1000.00",
+                "material_cost": "60.00",
+                "material_crit": 10,
+                "createdAt": "2024-06-27T22:17:59.163Z",
+                "updatedAt": "2024-06-27T22:17:59.163Z"
+              }
+            }
+          ],
+          "createdAt": "2024-06-29T09:01:22.418Z",
+          "updatedAt": "2024-06-29T09:01:22.418Z",
           "product": {
             "product_id": 2,
             "product_name": "French Press",
             "sub_category_id": 1,
             "product_status": "Active",
             "createdAt": "2024-06-27T22:28:47.311Z",
-            "updatedAt": "2024-06-27T22:28:47.311Z",
-            "variants": [
-              {
-                "variant_id": 4,
-                "product_id": 2,
-                "variant_type": "Hot",
-                "variant_size": "12",
-                "variant_cost": "115.00",
-                "createdAt": "2024-06-27T22:28:47.363Z",
-                "updatedAt": "2024-06-27T22:28:47.363Z"
-              },
-              {
-                "variant_id": 5,
-                "product_id": 2,
-                "variant_type": "Cold",
-                "variant_size": "12",
-                "variant_cost": "115.00",
-                "createdAt": "2024-06-27T22:28:47.471Z",
-                "updatedAt": "2024-06-27T22:28:47.471Z"
-              },
-              {
-                "variant_id": 6,
-                "product_id": 2,
-                "variant_type": "Cold",
-                "variant_size": "16",
-                "variant_cost": "130.00",
-                "createdAt": "2024-06-27T22:28:47.619Z",
-                "updatedAt": "2024-06-27T22:28:47.619Z"
-              }
-            ],
-            "addons": [
-              {
-                "product_id": 2,
-                "material_id": 4,
-                "addon_amount": "4.00",
-                "createdAt": "2024-06-27T22:28:47.701Z",
-                "updatedAt": "2024-06-27T22:28:47.701Z",
-                "material": {
-                  "material_id": 4,
-                  "branch_id": 1,
-                  "material_name": "Whole Milk",
-                  "material_pack_quantity": 40,
-                  "material_unit": "mL",
-                  "material_amount_per_pack": "1000.00",
-                  "material_cost": "60.00",
-                  "material_critical_level": 10,
-                  "createdAt": "2024-06-27T22:17:59.163Z",
-                  "updatedAt": "2024-06-27T22:17:59.163Z"
-                }
-              }
-            ]
+            "updatedAt": "2024-06-27T22:28:47.311Z"
           }
         }
       ],

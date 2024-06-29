@@ -41,47 +41,59 @@ const Receipt = React.forwardRef((props, ref) => {
           <span className="text-[12px]">AMOUNT</span>
         </div>
         <hr className="my-2" />
-        {receiptDetails["transaction"]["orders"].map((item, id) => (
-          <div className="flex flex-col w-full" key={id}>
-            <div className="flex flex-row w-full justify-between text-[12px]">
-              <p>{item["product"]["product_name"]}</p>
-              <p>{(item.variant.variant_cost * item.order_quantity).toFixed(2)}</p>
+        {receiptDetails["transaction"]["orders"].map((item, id) => {
+          return (
+            <div className="flex flex-col w-full" key={id}>
+              <div className="flex flex-row w-full justify-between text-[12px]">
+                <p>{item["product"]["product_name"]}</p>
+                <p>{(parseFloat(item["order_variant"]["variant_cost"]) * item["order_quantity"]).toFixed(2)}</p>
+              </div>
+              <p className="text-[10px] indent-[16px] text-slate-800">
+                {item["order_variant"]["variant_type"].toUpperCase()} - {item["order_variant"]["variant_size"]}oz
+              </p>
+              { 
+                item["order_addons"].map((addon, id) => (
+                  <p className="text-[10px] indent-[16px] text-slate-800" key={id}>{addon["material"]["material_name"].toUpperCase()}</p>
+                ))
+              }
+              <p className="text-[10px] indent-[16px] text-slate-800">qty: {item.order_quantity}</p>
             </div>
-            <p className="text-[10px] indent-[16px] text-slate-800">{item.variant.variant_type.toUpperCase()} - {item.variant.variant_size}oz</p>
-            <p className="text-[10px] indent-[16px] text-slate-800">qty: {item.order_quantity}</p>
-          </div>
-        ))}
+          );
+        })}
+
       </div>
       <hr className="my-2" />
       <div>
         <div className="flex justify-between">
           <span className="text-[12px]">TOTAL</span>
-          <span className="text-[12px]">450.00</span>
+          <span className="text-[12px]">{receiptDetails["transaction"]["transaction_total"]}</span>
         </div>
-        <div className="flex justify-between">
-          <span className="text-[12px]">DISCOUNT: SENIOR CITIZEN</span>
-          <span className="text-[12px]">100.00</span>
-        </div>
+        {receiptDetails["transaction"]["voucher_id"] && 
+          <div className="flex justify-between">
+            <span className="text-[12px]">DISCOUNT: SENIOR CITIZEN</span>
+            <span className="text-[12px]">100.00</span>
+          </div>
+        }
         <div className="flex justify-between">
           <span className="text-[12px]">VATable</span>
-          <span className="text-[12px]">3.23</span>
+          <span className="text-[12px]">{receiptDetails["transaction"]["transaction_vat_able"]}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-[12px]">VATable TAX</span>
-          <span className="text-[12px]">6.00</span>
+          <span className="text-[12px]">{receiptDetails["transaction"]["transaction_vat_tax"]}</span>
         </div>
         <hr className="my-2" />
         <div className="flex justify-between">
           <span className="text-[12px]">SUBTOTAL</span>
-          <span className="text-[12px]">359.23</span>
+          <span className="text-[12px]">{receiptDetails["transaction"]["transaction_total"] - receiptDetails["transaction"]["transaction_vat_tax"]}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-[12px]">CASH</span>
-          <span className="text-[12px]">500.00</span>
+          <span className="text-[12px]">{receiptDetails["transaction"]["transaction_cash_received"]}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-[12px]">CHANGE</span>
-          <span className="text-[12px]">140.77</span>
+          <span className="text-[12px]">{receiptDetails["transaction"]["transaction_change"]}</span>
         </div>
         <hr className="my-2" />
         <div className="flex flex-col items-center">
