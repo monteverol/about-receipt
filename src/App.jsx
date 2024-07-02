@@ -25,7 +25,9 @@ import {
   AdminVouchersTutorial,
   AdminProductsTutorial,
   AdminBranchesTutorial,
-  AdminEmployeesTutorial
+  AdminEmployeesTutorial,
+  AdminBackupAndRestoreTutorial,
+  AdminAccountSettingsTutorial
 } from './admin-tutorial/admin_tutorial'
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
         <Route path="/admin/help/product" element={<AdminProductsTutorial />} />
         <Route path="/admin/help/branch" element={<AdminBranchesTutorial />} />
         <Route path="/admin/help/employee" element={<AdminEmployeesTutorial />} />
+        <Route path="/admin/help/backup-and-restore" element={<AdminBackupAndRestoreTutorial />} />
+        <Route path="/admin/help/admin-account" element={<AdminAccountSettingsTutorial />} />
       </Routes>
     </BrowserRouter>
   )
