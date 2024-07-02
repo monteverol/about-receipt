@@ -46,6 +46,16 @@ import a_employee_2 from '../../assets/admin_employee_2.png';
 import a_employee_3 from '../../assets/admin_employee_3.png';
 import a_bnr_1 from '../../assets/admin_backup_n_restore_1.png';
 import a_bnr_2 from '../../assets/admin_backup_n_restore_2.png';
+import a_archive_1 from '../../assets/admin_archive_1.png';
+import a_archive_2 from '../../assets/admin_archive_2.png';
+import a_archive_3 from '../../assets/admin_archive_3.png';
+import a_as_1 from '../../assets/admin_account_setting_1.png';
+import a_as_2 from '../../assets/admin_account_setting_2.png';
+import a_as_3 from '../../assets/admin_account_setting_3.png';
+import a_as_4 from '../../assets/admin_account_setting_4.png';
+import a_as_5 from '../../assets/admin_account_setting_5.png';
+import a_as_6 from '../../assets/admin_account_setting_6.png';
+import a_as_7 from '../../assets/admin_account_setting_7.png';
 
 export const AdminTutorialScreen = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -210,7 +220,7 @@ export const AdminLoginLogoutTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[0] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={logging_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={logging_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[28px] font-bold shadow-2xl">
                                 <ol className='list-decimal ml-8'>
                                     <li>Access the link and go to the login screen.</li>
@@ -241,16 +251,16 @@ export const AdminLoginLogoutTutorial = () => {
                                         <li className="mt-4">Click on your profile.</li>
                                     </ol>
                                 </div>
-                                <img src={logout_1} alt="Log Out" className="w-2/3" />
+                                <img src={logout_1} alt="Log Out" className="w-2/3 shadow-2xl rounded-3xl" />
                             </div>
                             <div className="w-full flex flex-row gap-4">
-                                <img src={logout_2} alt="Log Out" className="w-2/3" />
+                                <img src={logout_2} alt="Log Out" className="w-2/3 shadow-2xl rounded-3xl" />
                                 <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-3xl">
                                     Click the "Sign Out" Button
                                 </div>
                             </div>
                             <div className="w-full flex flex-row gap-4">
-                                <div className="w-2/3 bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold">
+                                <div className="w-2/3 shadow-2xl rounded-3xl bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold">
                                     Click the "Confirm" button to log out.
                                 </div>
                                 <img src={logout_3} alt="Log Out" className="w-1/3" />
@@ -277,10 +287,10 @@ export const AdminLoginLogoutTutorial = () => {
                                         link.</li>
                                     </ol>
                                 </div>
-                                <img src={forgot_1} alt="Log Out" className="w-2/3" />
+                                <img src={forgot_1} alt="Log Out" className="w-2/3 shadow-2xl rounded-3xl" />
                             </div>
                             <div className="w-full flex flex-row gap-4">
-                                <img src={forgot_2} alt="Log Out" className="w-2/3" />
+                                <img src={forgot_2} alt="Log Out" className="w-2/3 shadow-2xl rounded-3xl" />
                                 <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-3xl">
                                     <ol className="ml-8 list-decimal" start="2">
                                         <li>You will be directed to a screen where you need to enter your registered email address.</li>
@@ -289,7 +299,7 @@ export const AdminLoginLogoutTutorial = () => {
                                 </div>
                             </div>
                             <div className="w-full flex flex-row gap-4">
-                                <div className="w-2/3 bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold">
+                                <div className="w-2/3 shadow-2xl rounded-3xl bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold">
                                     <ol className="ml-8 list-decimal" start="4">
                                         <li>The system requires you to enter the 2FA code sent to your registered email address and then click Confirm.</li>
                                     </ol>
@@ -298,7 +308,7 @@ export const AdminLoginLogoutTutorial = () => {
                             </div>
                             <div className="w-full flex flex-row gap-4">
                                 <img src={forgot_4} alt="Log Out" className="w-1/3" />
-                                <div className="w-2/3 bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold">
+                                <div className="w-2/3 shadow-2xl rounded-3xl bg-[#FCF4EA] rounded-3xl flex items-center justify-center px-8 text-[#A28F8F] text-[32px] font-bold">
                                     <ol className="ml-8 list-decimal" start="5">
                                         <li>Enter your new PIN in the "New PIN" field.</li>
                                         <li className="mt-4">Confirm your new PIN by entering it again in the "Confirm PIN" field.</li>
@@ -348,7 +358,7 @@ export const AdminSalesReportsTutorial = () => {
                                     <li className="mt-4">By clicking the "Swap View" button, you can switch from the sales report's view to its data visualization.</li>
                                 </ol>
                             </div>
-                            <img src={a_sales_report_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_sales_report_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -364,7 +374,7 @@ export const AdminSalesReportsTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_sales_report_2} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_sales_report_2} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 This is a data visualization view that displays the shop's net income over the course of a specified date.
                             </div>
@@ -407,7 +417,7 @@ export const AdminForecastReportTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 You can also select which branch you want to view, as well as filter the date you want to view.
                             </div>
-                            <img src={a_forecast_report_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_forecast_report_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -423,7 +433,7 @@ export const AdminForecastReportTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_forecast_report_2} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_forecast_report_2} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 <ol className="list-decimal ml-8">
                                     <li>The top page displays the top five best-selling products in your shop.</li>
@@ -469,7 +479,7 @@ export const AdminTransactionsTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 You can also select which branch you want to view, as well as filter the date you want to view as well as search the particular transaction through Order No..
                             </div>
-                            <img src={a_transaction_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_transaction_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -485,7 +495,7 @@ export const AdminTransactionsTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_transaction_2} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_transaction_2} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Under transactions, you’ll see the transaction history page. This provides a detailed record of all previous transactions done, It displays the date, order number, amount and the mode of payment done. 
                             </div>
@@ -528,7 +538,7 @@ export const AdminActivityLogsTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Simply selecting the desired date and time will also allow you to filter what you want to view. 
                             </div>
-                            <img src={a_activity_log_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_activity_log_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -547,7 +557,7 @@ export const AdminActivityLogsTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 This page allows you to view the previously completed activities.  Along with the various actions performed, it shows the time stamp and the user who initiated the activity.
                             </div>
-                            <img src={a_activity_log_2} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_activity_log_2} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -591,7 +601,7 @@ export const AdminInventoryManagementTutorial = () => {
                                     <li className="mt-4">You can search for a specific inventory item using Item ID.</li>
                                 </ol>
                             </div>
-                            <img src={a_inventory_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_inventory_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -607,7 +617,7 @@ export const AdminInventoryManagementTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_inventory_2} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_inventory_2} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 <ol className="list-decimal ml-8" start="4">
                                     <li>View current inventory details: item name, measurement, cost per measurement, critical level, and quantity.</li>
@@ -640,7 +650,7 @@ export const AdminInventoryManagementTutorial = () => {
                                     <li className="mt-4">Select "Create" after it's finished.</li>
                                 </ol>
                             </div>
-                            <img src={a_inventory_3} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_inventory_3} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -656,7 +666,7 @@ export const AdminInventoryManagementTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[3] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_inventory_4} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_inventory_4} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[24px] font-bold shadow-2xl">
                                 To add stock, Click the “Add Stock” buttton
                             </div>
@@ -671,7 +681,7 @@ export const AdminInventoryManagementTutorial = () => {
                                     <li className="mt-4">If everything has been completed, click the "Update Stock" button to add the stocks that have been entered.</li>
                                 </ol>
                             </div>
-                            <img src={a_inventory_5} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_inventory_5} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -711,7 +721,7 @@ export const AdminOrderSettingsTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Click the “Order Settings” on the Dashboard Menu
                             </div>
-                            <img src={a_order_settings_1} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_order_settings_1} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -727,7 +737,7 @@ export const AdminOrderSettingsTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_order_settings_2} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_order_settings_2} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Select Branch to view the products of that branch.
                             </div>
@@ -738,12 +748,12 @@ export const AdminOrderSettingsTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 From the Order Settings screen, we will see the order dashboard of all the available products in the menu. From here we can see different buttons from the upper right having: Category, Vouchers, and Add Item Buttons.
                             </div>
-                            <img src={a_order_settings_3} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_order_settings_3} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                     <div className={`transition-max-height duration-300 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_order_settings_4} alt="Logging In image 1" className='w-2/3'/>
+                            <img src={a_order_settings_4} alt="Logging In image 1" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Here are the clickable buttons from the menu.
                             </div>
@@ -786,7 +796,7 @@ export const AdminCategoriesTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Click the “Order Settings” on the Dashboard Menu
                             </div>
-                            <img src={a_category_1} alt="" className='w-2/3'/>
+                            <img src={a_category_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -802,7 +812,7 @@ export const AdminCategoriesTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_category_2} alt="" className='w-2/3'/>
+                            <img src={a_category_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 <ol className="list-decimal ml-8">
                                     <li>Enter the necessary  informations such as category name, Subcategories</li>
@@ -831,7 +841,7 @@ export const AdminCategoriesTutorial = () => {
                                     <li className="mt-4">After completing everything, click save.</li>
                                 </ol>
                             </div>
-                            <img src={a_category_3} alt="" className='w-2/3'/>
+                            <img src={a_category_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -871,7 +881,7 @@ export const AdminVouchersTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Click the “Order Settings” on the Dashboard Menu and click the Voucher at the upper right corner
                             </div>
-                            <img src={a_voucher_1} alt="" className='w-2/3'/>
+                            <img src={a_voucher_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -887,7 +897,7 @@ export const AdminVouchersTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[1000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_voucher_2} alt="" className='w-2/3'/>
+                            <img src={a_voucher_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 <ol className="list-decimal ml-8">
                                     <li>Enter the nacessary informations such as voucher name, Type of Voucher, Discount%, Voucher Description.</li>
@@ -915,7 +925,7 @@ export const AdminVouchersTutorial = () => {
                                     <li className="mt-4">After filling out, click “Add” Button.</li>
                                 </ol>
                             </div>
-                            <img src={a_voucher_3} alt="" className='w-2/3'/>
+                            <img src={a_voucher_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -952,7 +962,7 @@ export const AdminProductsTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[4000px]' : 'max-h-0 p-2'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_product_1} alt="" className='w-2/3'/>
+                            <img src={a_product_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 At the upper right corner, clicking a "+ Product" will give you the capability to add a new Product to the system.
                             </div>
@@ -963,10 +973,10 @@ export const AdminProductsTutorial = () => {
                                     <li>Upload the picture you want to add</li>
                                 </ol>
                             </div>
-                            <img src={a_product_2} alt="" className='w-2/3'/>
+                            <img src={a_product_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_product_3} alt="" className='w-2/3'/>
+                            <img src={a_product_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 <ol className="list-decimal ml-8" start="2">
                                     <li>Provide the required information, including the product name, size selection, list of potential add-ons, price and value, and weight.</li>
@@ -980,7 +990,7 @@ export const AdminProductsTutorial = () => {
                                     <li>If everything is correct, click the "Confirm" button to add the product to the menu.</li>
                                 </ol>
                             </div>
-                            <img src={a_product_4} alt="" className='w-2/3'/>
+                            <img src={a_product_4} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1020,7 +1030,7 @@ export const AdminBranchesTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Click the “Branch and Employees Settings” on the Dashboard Menu
                             </div>
-                            <img src={a_branch_1} alt="" className='w-2/3'/>
+                            <img src={a_branch_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1036,7 +1046,7 @@ export const AdminBranchesTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[5000px]' : 'max-h-0'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_branch_2} alt="" className='w-2/3'/>
+                            <img src={a_branch_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 For adding Branch, Click the “+ Branch” 
                             </div>
@@ -1048,7 +1058,7 @@ export const AdminBranchesTutorial = () => {
                                     <li className="mt-4">If everything is finished, click "Save".</li>
                                 </ol>
                             </div>
-                            <img src={a_branch_3} alt="" className='w-2/3'/>
+                            <img src={a_branch_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1064,7 +1074,7 @@ export const AdminBranchesTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[2] ? 'max-h-[5000px]' : 'max-h-0'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_branch_4} alt="" className='w-2/3'/>
+                            <img src={a_branch_4} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 For editing Branch, Click the edit icon at the right end of the specific branch you want to edit
                             </div>
@@ -1076,7 +1086,7 @@ export const AdminBranchesTutorial = () => {
                                     <li className="mt-4">If everything is finished, click "Save".</li>
                                 </ol>
                             </div>
-                            <img src={a_branch_3} alt="" className='w-2/3'/>
+                            <img src={a_branch_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1116,7 +1126,7 @@ export const AdminEmployeesTutorial = () => {
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 Click the “Branch and Employees Settings” on the Dashboard Menu
                             </div>
-                            <img src={a_branch_1} alt="" className='w-2/3'/>
+                            <img src={a_branch_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1132,7 +1142,7 @@ export const AdminEmployeesTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[5000px]' : 'max-h-0'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_employee_1} alt="" className='w-2/3'/>
+                            <img src={a_employee_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 For adding Employee, Click the “+ Employee 
                             </div>
@@ -1144,7 +1154,7 @@ export const AdminEmployeesTutorial = () => {
                                     <li className="mt-4">Once all information is entered, click "Add" to finalize the process.</li>
                                 </ol>
                             </div>
-                            <img src={a_employee_2} alt="" className='w-2/3'/>
+                            <img src={a_employee_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1160,7 +1170,7 @@ export const AdminEmployeesTutorial = () => {
                     </div>
                     <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[2] ? 'max-h-[5000px]' : 'max-h-0'}`}>
                         <div className="w-full flex flex-row p-8 gap-4">
-                            <img src={a_employee_3} alt="" className='w-2/3'/>
+                            <img src={a_employee_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                             <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
                                 For editing Emplpoyee, Click the edit icon and select which employee you want to edit
                             </div>
@@ -1172,7 +1182,7 @@ export const AdminEmployeesTutorial = () => {
                                     <li className="mt-4">If everything is finished, click the "Save" button.</li>
                                 </ol>
                             </div>
-                            <img src={a_employee_2} alt="" className='w-2/3'/>
+                            <img src={a_employee_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1215,7 +1225,7 @@ export const AdminBackupAndRestoreTutorial = () => {
                                     <li className="mt-4">To create a backup, click the "Backup" button. The backup file will be saved in the backup history.</li>
                                 </ol>
                             </div>
-                            <img src={a_bnr_1} alt="" className='w-2/3'/>
+                            <img src={a_bnr_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1237,7 +1247,7 @@ export const AdminBackupAndRestoreTutorial = () => {
                                     <li className="mt-4">After clicking, the Restore screen will appear. Click the restore button again to restore the file</li>
                                 </ol>
                             </div>
-                            <img src={a_bnr_2} alt="" className='w-2/3'/>
+                            <img src={a_bnr_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
                         </div>
                     </div>
                 </div>
@@ -1247,6 +1257,85 @@ export const AdminBackupAndRestoreTutorial = () => {
     );
 }
 
+export const AdminArchivesTutorial = () => {
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const navigate = useNavigate();
+
+    const handleCategoryClick = (categoryName) => {
+        setSelectedCategory(prevCategory => (prevCategory === categoryName ? null : categoryName));
+    }
+    const indices = ["a", "b", "c", "d"]
+
+    return (
+        <div className="h-screen w-full flex flex-col bg-[#E8E0D6] px-20">
+            <div className="w-full flex items-center gap-[40px] cursor-pointer">
+                <MdOutlineKeyboardArrowLeft size={120} color='#D15341' onClick={() => navigate('../admin/help')}/>
+                <h1 className="text-[80px] font-bold text-[#D15341]">Archive</h1>
+            </div>
+            <hr className='border-0 h-1 my-8 bg-[#D15341]' />
+            <div className="p-4 bg-[#ccc5bd] rounded-3xl overflow-scroll">
+                {/* FIELD SELECTION */}
+                <div className="w-full bg-[#F9F1E7] rounded-3xl overflow-hidden mt-4">
+                    <div 
+                        className="w-full flex flex-row justify-between items-center px-8 py-4 bg-[#FFF9F1] rounded-3xl text-[#958989] text-[60px] font-bold cursor-pointer shadow-xl"
+                        onClick={() => handleCategoryClick(indices[0])}
+                    >
+                        <h1>Field Selection</h1>
+                        <IoMdArrowDropup className={`duration-300 transform ${selectedCategory === indices[0] ? 'rotate-180' : ''}`} />
+                    </div>
+                    <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[0] ? 'max-h-[5000px]' : 'max-h-0 p-2'}`}>
+                        <div className="w-full flex flex-row p-8 gap-4">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                In this page, you can select which classification of archive you want to go
+                            </div>
+                            <img src={a_archive_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                    </div>
+                </div>
+
+                {/* FILTRATION */}
+                <div className="w-full bg-[#F9F1E7] rounded-3xl overflow-hidden mt-4">
+                    <div 
+                        className="w-full flex flex-row justify-between items-center px-8 py-4 bg-[#FFF9F1] rounded-3xl text-[#958989] text-[60px] font-bold cursor-pointer shadow-xl"
+                        onClick={() => handleCategoryClick(indices[1])}
+                    >
+                        <h1>Filtration</h1>
+                        <IoMdArrowDropup className={`duration-300 transform ${selectedCategory === indices[1] ? 'rotate-180' : ''}`} />
+                    </div>
+                    <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[5000px]' : 'max-h-0 p-2'}`}>
+                        <div className="w-full flex flex-row p-8 gap-4">
+                            <img src={a_archive_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                In every classification, you are presented with the same layout.<br /><br />
+                                You can filter every items if you want to see the active items or inactive by utilizing the select status.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* STATUS */}
+                <div className="w-full bg-[#F9F1E7] rounded-3xl overflow-hidden mt-4">
+                    <div 
+                        className="w-full flex flex-row justify-between items-center px-8 py-4 bg-[#FFF9F1] rounded-3xl text-[#958989] text-[60px] font-bold cursor-pointer shadow-xl"
+                        onClick={() => handleCategoryClick(indices[2])}
+                    >
+                        <h1>Status</h1>
+                        <IoMdArrowDropup className={`duration-300 transform ${selectedCategory === indices[2] ? 'rotate-180' : ''}`} />
+                    </div>
+                    <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[2] ? 'max-h-[5000px]' : 'max-h-0 p-2'}`}>
+                        <div className="w-full flex flex-row p-8 gap-4">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                Status indicates the state of the item, if the item is inactive, it will not reflect in your system and also in the cashier.<br /><br />
+                                You will be prompted for confirmation if the button is clicked accidentally. This is to ensure that there's no loss in the system.
+                            </div>
+                            <img src={a_archive_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 
 export const AdminAccountSettingsTutorial = () => {
@@ -1265,7 +1354,114 @@ export const AdminAccountSettingsTutorial = () => {
                 <h1 className="text-[80px] font-bold text-[#D15341]">Admin Account Settings</h1>
             </div>
             <hr className='border-0 h-1 my-8 bg-[#D15341]' />
-            <div className="p-4 bg-[#ccc5bd] rounded-3xl overflow-scroll"></div>
+            <div className="p-4 bg-[#ccc5bd] rounded-3xl overflow-scroll">
+                {/* CHANGE ADMIN EMAIL ACCOUNT */}
+                <div className="w-full bg-[#F9F1E7] rounded-3xl overflow-hidden">
+                    <div 
+                        className="w-full flex flex-row justify-between items-center px-8 py-4 bg-[#FFF9F1] rounded-3xl text-[#958989] text-[60px] font-bold cursor-pointer shadow-xl"
+                        onClick={() => handleCategoryClick(indices[0])}
+                    >
+                        <h1>Change Admin Email Account</h1>
+                        <IoMdArrowDropup className={`duration-300 transform ${selectedCategory === indices[0] ? 'rotate-180' : ''}`} />
+                    </div>
+                    <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[0] ? 'max-h-[5000px]' : 'max-h-0 p-2'}`}>
+                        <div className="w-full flex flex-row p-8 gap-4">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8">
+                                    <li>Enter your registered email address.</li>
+                                    <li className="mt-4">After entering, click "confirm."</li>
+                                </ol>
+                            </div>
+                            <img src={a_as_1} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                        <div className="w-full flex flex-row px-8 gap-4 mb-8">
+                            <img src={a_as_2} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8" start="3">
+                                    <li>Enter the two-factor authentication code that was sent to your registered email address.</li>
+                                    <li className="mt-4">After entering, click "confirm."</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className="w-full flex flex-row px-8 gap-4 mb-8">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8" start="5">
+                                    <li>Enter a new email address.</li>
+                                    <li className="mt-4">After entering, click "confirm."</li>
+                                </ol>
+                            </div>
+                            <img src={a_as_3} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                    </div>
+                </div>
+
+                {/* CHANGE ADMIN PIN */}
+                <div className="w-full bg-[#F9F1E7] rounded-3xl overflow-hidden mt-4">
+                    <div 
+                        className="w-full flex flex-row justify-between items-center px-8 py-4 bg-[#FFF9F1] rounded-3xl text-[#958989] text-[60px] font-bold cursor-pointer shadow-xl"
+                        onClick={() => handleCategoryClick(indices[1])}
+                    >
+                        <h1>Change Admin PIN</h1>
+                        <IoMdArrowDropup className={`duration-300 transform ${selectedCategory === indices[1] ? 'rotate-180' : ''}`} />
+                    </div>
+                    <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[1] ? 'max-h-[5000px]' : 'max-h-0 p-2'}`}>
+                        <div className="w-full flex flex-row p-8 gap-4">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8">
+                                    <li>Enter your registered email address.</li>
+                                    <li className="mt-4">After entering, click "confirm."</li>
+                                </ol>
+                            </div>
+                            <img src={a_as_4} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                        <div className="w-full flex flex-row px-8 gap-4 mb-8">
+                            <img src={a_as_5} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8" start="3">
+                                    <li>Enter the two-factor authentication code that was sent to your registered email address. </li>
+                                    <li className="mt-4">After entering, click "confirm."</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className="w-full flex flex-row px-8 gap-4 mb-8">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8" start="5">
+                                    <li>Input a new PIN.</li>
+                                    <li className="mt-4">Verify the new PIN by entering it again.</li>
+                                    <li className="mt-4">Click "confirm" to proceed.</li>
+                                </ol>
+                            </div>
+                            <img src={a_as_6} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                    </div>
+                </div>
+
+                {/* CHANGE ADMIN DETATILS */}
+                <div className="w-full bg-[#F9F1E7] rounded-3xl overflow-hidden mt-4">
+                    <div 
+                        className="w-full flex flex-row justify-between items-center px-8 py-4 bg-[#FFF9F1] rounded-3xl text-[#958989] text-[60px] font-bold cursor-pointer shadow-xl"
+                        onClick={() => handleCategoryClick(indices[2])}
+                    >
+                        <h1>Change Admin Details</h1>
+                        <IoMdArrowDropup className={`duration-300 transform ${selectedCategory === indices[2] ? 'rotate-180' : ''}`} />
+                    </div>
+                    <div className={`transition-max-height duration-300 p-2 ease-in-out ${selectedCategory === indices[2] ? 'max-h-[5000px]' : 'max-h-0 p-2'}`}>
+                        <div className="w-full flex flex-row p-8 gap-4">
+                            <div className="w-1/3 bg-[#FCF4EA] rounded-3xl flex flex-col justify-center px-8 text-[#A28F8F] text-[32px] font-bold shadow-2xl">
+                                <ol className="list-decimal ml-8">
+                                    <li>Enter an updated name.</li>
+                                    <li className="mt-4">Enter an updated birthdate.</li>
+                                    <li className="mt-4">Enter an updated join date as an admin.</li>
+                                    <li className="mt-4">Click "confirm" to proceed.</li>
+                                </ol>
+                            </div>
+                            <img src={a_as_7} alt="" className='w-2/3 shadow-2xl rounded-3xl'/>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     );
 }
