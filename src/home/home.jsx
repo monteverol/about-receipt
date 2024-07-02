@@ -101,6 +101,113 @@ const Home = () => {
             "createdAt": "2024-06-27T22:28:47.311Z",
             "updatedAt": "2024-06-27T22:28:47.311Z"
           }
+        },
+        {
+          "order_id": 1,
+          "product_id": 2,
+          "order_quantity": 1,
+          "transaction_id": 1,
+          "order_variant": {
+            "variant_size": "12",
+            "variant_type": "Cold",
+            "variant_cost": "115.00"
+          },
+          "order_addons": [
+          ],
+          "createdAt": "2024-06-29T09:01:22.418Z",
+          "updatedAt": "2024-06-29T09:01:22.418Z",
+          "product": {
+            "product_id": 2,
+            "product_name": "French Press",
+            "sub_category_id": 1,
+            "product_status": "Active",
+            "createdAt": "2024-06-27T22:28:47.311Z",
+            "updatedAt": "2024-06-27T22:28:47.311Z"
+          }
+        },
+        {
+          "order_id": 1,
+          "product_id": 2,
+          "order_quantity": 1,
+          "transaction_id": 1,
+          "order_variant": {
+            "variant_size": "12",
+            "variant_type": "Cold",
+            "variant_cost": "115.00"
+          },
+          "order_addons": [
+            {
+              "product_id": 2,
+              "material_id": 4,
+              "addon_amount": "4.00",
+              "createdAt": "2024-06-27T22:28:47.701Z",
+              "updatedAt": "2024-06-27T22:28:47.701Z",
+              "material": {
+                "material_id": 4,
+                "branch_id": 1,
+                "material_name": "Whole Milk",
+                "material_pack": 40,
+                "material_unit": "mL",
+                "material_amou": "1000.00",
+                "material_cost": "60.00",
+                "material_crit": 10,
+                "createdAt": "2024-06-27T22:17:59.163Z",
+                "updatedAt": "2024-06-27T22:17:59.163Z"
+              }
+            }
+          ],
+          "createdAt": "2024-06-29T09:01:22.418Z",
+          "updatedAt": "2024-06-29T09:01:22.418Z",
+          "product": {
+            "product_id": 2,
+            "product_name": "French Press",
+            "sub_category_id": 1,
+            "product_status": "Active",
+            "createdAt": "2024-06-27T22:28:47.311Z",
+            "updatedAt": "2024-06-27T22:28:47.311Z"
+          }
+        },
+        {
+          "order_id": 1,
+          "product_id": 2,
+          "order_quantity": 1,
+          "transaction_id": 1,
+          "order_variant": {
+            "variant_size": "12",
+            "variant_type": "Cold",
+            "variant_cost": "115.00"
+          },
+          "order_addons": [
+            {
+              "product_id": 2,
+              "material_id": 4,
+              "addon_amount": "4.00",
+              "createdAt": "2024-06-27T22:28:47.701Z",
+              "updatedAt": "2024-06-27T22:28:47.701Z",
+              "material": {
+                "material_id": 4,
+                "branch_id": 1,
+                "material_name": "Whole Milk",
+                "material_pack": 40,
+                "material_unit": "mL",
+                "material_amou": "1000.00",
+                "material_cost": "60.00",
+                "material_crit": 10,
+                "createdAt": "2024-06-27T22:17:59.163Z",
+                "updatedAt": "2024-06-27T22:17:59.163Z"
+              }
+            }
+          ],
+          "createdAt": "2024-06-29T09:01:22.418Z",
+          "updatedAt": "2024-06-29T09:01:22.418Z",
+          "product": {
+            "product_id": 2,
+            "product_name": "French Press",
+            "sub_category_id": 1,
+            "product_status": "Active",
+            "createdAt": "2024-06-27T22:28:47.311Z",
+            "updatedAt": "2024-06-27T22:28:47.311Z"
+          }
         }
       ],
       "user": {
@@ -132,11 +239,14 @@ const Home = () => {
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-black">
-      <div className="rounded-3xl h-4/5 w-4/5 bg-[#f5efdc] relative flex items-center justify-center">
-        <Receipt receiptDetails={receiptDetails} ref={receiptRef} />
-        <div onClick={handleDownloadPDF} className="bg-[#D15341] h-[112px] w-[396px] flex items-center justify-center absolute bottom-8 right-8 rounded-2xl text-5xl text-white font-extrabold">Confirm</div>
+    <div className="rounded-3xl h-4/5 w-4/5 bg-[#f5efdc] relative flex items-center justify-center overflow-y-scroll">
+      <Receipt receiptDetails={receiptDetails} ref={receiptRef} />
+      <div onClick={handleDownloadPDF} className="bg-[#D15341] h-[112px] w-[396px] flex items-center justify-center absolute bottom-8 right-8 rounded-2xl text-5xl text-white font-extrabold">
+        Confirm
       </div>
     </div>
+  </div>
+  
   );
 };
 
